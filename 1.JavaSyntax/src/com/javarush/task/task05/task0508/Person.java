@@ -5,9 +5,9 @@ package com.javarush.task.task05.task0508;
 */
 
 public class Person {
-    String name;
-    int age;
-    char sex;
+    private String name;
+    private int age;
+    private char sex;
 
 
     public String getName() {
