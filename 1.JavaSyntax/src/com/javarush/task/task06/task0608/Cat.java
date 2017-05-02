@@ -12,7 +12,7 @@ public class Cat {
     }
 
     public static int getCatCount() {
-        return catCount;
+        return Cat.catCount;
 
     }
 
