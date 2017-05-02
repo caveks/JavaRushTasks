@@ -29,8 +29,8 @@ public class ConsoleReader {
 
     public static boolean readBoolean() throws Exception {
         Scanner scanner = new Scanner(System.in);
-        boolean bool = Boolean.parseBoolean(scanner.nextLine());
-        return bool;
+        boolean booLean = Boolean.parseBoolean(scanner.nextLine());
+        return booLean;
     }
 
     public static void main(String[] args) {
