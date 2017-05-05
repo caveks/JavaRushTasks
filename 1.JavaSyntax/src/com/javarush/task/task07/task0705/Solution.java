@@ -14,7 +14,7 @@ public class Solution {
         int[] small_2 = new int[10];
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i < 20; i++){
+        for (int i = 0; i < mass.length; i++){
             mass[i] = Integer.parseInt(reader.readLine());
         }
 
