@@ -21,25 +21,21 @@ public class Solution {
         int min = list.get(0).length();
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).length() < min){
-                min = list.get(i).length();
+                min = i;
             }
         }
 
         int max = list.get(0).length();
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).length() > max){
-                max = list.get(i).length();
+                max = i;
             }
         }
 
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).length() == min){
-                System.out.println(list.get(i));
-                break;
-            } else if (list.get(i).length() == max){
-                System.out.println(list.get(i));
-                break;
-            }
+        if (min < max){
+            System.out.println(list.get(min));
+        } else {
+            System.out.println(list.get(max));
         }
 
 
