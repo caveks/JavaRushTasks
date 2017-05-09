@@ -26,13 +26,13 @@ public class Solution {
     public static ArrayList<String> fix(ArrayList<String> list) {
 
         for (int i = 0; i < list.size(); i++){
-                if (list.get(i).contains("р") && !list.get(i).contains("л")){
-                    list.remove(i);
-                    i--;
-                } else if (list.get(i).contains("л") && !list.get(i).contains("р")){
-                    list.add(i + 1, list.get(i));
-                    i++;
-                }
+            if (list.get(i).contains("р") && !list.get(i).contains("л")){
+                list.remove(i);
+                i--;
+            } else if (list.get(i).contains("л") && !list.get(i).contains("р")){
+                list.add(i + 1, list.get(i));
+                i++;
+            }
         }
         return list;
     }
