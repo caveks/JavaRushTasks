@@ -16,17 +16,11 @@ public class Solution {
             list.add(reader.readLine());
         }
 
-        for (int i = 0; i < list.size(); i++){
-            int min = list.get(i).length();
-            for (int m = i + 1; m < list.size(); m++){
-                if (list.get(m).length() < min){
-
-                }
+        for (int i = 1; i < list.size(); i++){
+            if (list.get(i - 1).length() > list.get(i).length()){
+                System.out.println(i);
+                break;
             }
-        }
-        for (String s:list) {
-            System.out.println(s);
         }
     }
 }
-
