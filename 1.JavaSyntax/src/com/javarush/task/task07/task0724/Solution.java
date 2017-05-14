@@ -47,8 +47,6 @@ public class Solution {
             this.mother = mother;
         }
 
-
-
         public String toString() {
             String text = "";
             text += "Имя: " + this.name;
