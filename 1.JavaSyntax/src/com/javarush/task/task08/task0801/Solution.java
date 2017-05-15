@@ -5,6 +5,7 @@ HashSet из растений
 */
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
@@ -23,5 +24,13 @@ public class Solution {
         for (String s : fruits) {
             System.out.println(s);
         }
+
+//        вывод с помощью итератора
+//        Iterator<String> iterator = fruits.iterator();
+//        while (iterator.hasNext()){
+//            String s = iterator.next();
+//            System.out.println(s);
+//        }
+
     }
 }
