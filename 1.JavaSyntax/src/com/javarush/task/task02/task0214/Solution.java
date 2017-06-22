@@ -7,6 +7,7 @@ public class Solution {
     public static int min(int a, int b) {
 
         // 1-й вариант
+
 //        if (a < b){
 //            return a;
 //        } else {
@@ -14,6 +15,7 @@ public class Solution {
 //        }
 
         // 2-й вариант
+
           return a < b ? a:b;
     }
 
