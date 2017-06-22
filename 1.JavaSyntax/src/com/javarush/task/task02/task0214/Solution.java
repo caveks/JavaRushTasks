@@ -5,11 +5,16 @@ package com.javarush.task.task02.task0214;
 */
 public class Solution {
     public static int min(int a, int b) {
-        if (a < b){
-            return a;
-        } else {
-            return b;
-        }
+
+        // 1-й вариант
+//        if (a < b){
+//            return a;
+//        } else {
+//            return b;
+//        }
+
+        // 2-й вариант
+          return a < b ? a:b;
     }
 
     public static void main(String[] args) throws Exception {
