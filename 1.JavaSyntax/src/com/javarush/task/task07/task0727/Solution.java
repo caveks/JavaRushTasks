@@ -20,18 +20,15 @@ public class Solution {
             list.add(s);
         }
 
-        ArrayList<StringBuilder> listEvenOdd = new ArrayList<StringBuilder>();
+        ArrayList<String> listEvenOdd = new ArrayList<String>();
         for (int i = 0; i < list.size(); i++) {
             String s = list.get(i);
             char[] letter = s.toCharArray();
-            StringBuilder builder = new StringBuilder();
             if (letter.length % 2 == 0){
-                builder.append(s + " " + s);
+                listEvenOdd.add(s + " " + s);
             } else {
-                builder.append(s + " " + s + " " + s);
+                listEvenOdd.add(s + " " + s + " " + s);
             }
-
-            listEvenOdd.add(builder);
         }
 
         for (int i = 0; i < listEvenOdd.size(); i++) {
