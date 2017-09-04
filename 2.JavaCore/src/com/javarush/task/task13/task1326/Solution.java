@@ -17,9 +17,9 @@ public class Solution {
         TreeSet<Integer> set = new TreeSet<>();
 
         while (reader.ready()) {
-            int num = Integer.parseInt(reader.readLine());
-            if (num % 2 == 0) {
-                set.add(num);
+            int digit = Integer.parseInt(reader.readLine());
+            if (digit % 2 == 0) {
+                set.add(digit);
             }
         }
 
