@@ -70,4 +70,3 @@ public class Solution {
         System.out.println(fingers.toString());
     }
 }
-
