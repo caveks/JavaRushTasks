@@ -11,6 +11,7 @@ public class Solution {
     }
 
     public static class NakedCat {
+
     }
 
     public static class NormalCat extends NakedCat {
