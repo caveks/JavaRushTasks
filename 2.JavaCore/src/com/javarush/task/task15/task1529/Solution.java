@@ -33,5 +33,6 @@ public class Solution {
             String numPassengers = reader.readLine();
             result = new Plane(Integer.parseInt(numPassengers));
         }
+        reader.close();
     }
 }
