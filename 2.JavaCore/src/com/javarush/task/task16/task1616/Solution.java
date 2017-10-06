@@ -28,7 +28,7 @@ public class Solution {
 
         public void run() {
             try {
-                while (!interrupted()){
+                while (true){
                     seconds++;
                     Thread.sleep(1000);
                 }
