@@ -13,13 +13,13 @@ public class Solution {
     }
 
     public static void ourInterruptMethod() {
-         TestThread.stop = false;
+         TestThread.stopThread = true;
     }
 
     public static class TestThread implements Runnable {
-        public static boolean stop = true;
+        public static boolean stopThread = false;
         public void run() {
-            while (stop) {
+            while (!stopThread) {
                 try {
                     System.out.println("he-he");
                     Thread.sleep(500);
