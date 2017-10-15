@@ -53,7 +53,6 @@ public class Solution {
             }
         }
 
-
         @Override
         public String toString() {
             return result.toString();
