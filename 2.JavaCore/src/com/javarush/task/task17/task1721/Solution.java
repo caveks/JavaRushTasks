@@ -39,8 +39,6 @@ public class Solution {
         }
     }
 
-
-
     public void joinData () throws CorruptedDataException {
         if (allLines.containsAll(forRemoveLines)){
             allLines.removeAll(forRemoveLines);
