@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.TreeSet;
 
 /* 
 Сортировка байт
@@ -50,5 +51,20 @@ public class Solution {
         for (Integer i : sortList) {
             System.out.print(i + " ");
         }
+
+        // 2-й вариант //
+
+//        TreeSet<Integer> set = new TreeSet<>();
+//        while (fileInputStream.available() > 0) {
+//            set.add(fileInputStream.read());
+//        }
+//        fileInputStream.close();
+//
+//        for (Integer i : set) {
+//            System.out.print(i + " ");
+//        }
+
+
+
     }
 }
