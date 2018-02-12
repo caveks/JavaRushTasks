@@ -14,13 +14,29 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String fileName = reader.readLine();
         FileInputStream inputStream = new FileInputStream(fileName);
+
+
+//                       1-й вариант
+//      while (true) {
+//            int n = 0;
+//            while (inputStream.available() > 0) {
+//                inputStream.read();
+//                n++;
+//            }
+//
+//            if (n < 1000) {
+//                reader.close();
+//                inputStream.close();
+//                throw new DownloadException();
+//            } else {
+//                fileName = reader.readLine();
+//                inputStream = new FileInputStream(fileName);
+//            }
+//        }
+//    }
+//              2-й вариант
         while (true) {
-            int n = 0;
-            while (inputStream.available() > 0) {
-                inputStream.read();
-                n++;
-            }
-            if (n < 1000) {
+            if (inputStream.available() < 1000) {
                 reader.close();
                 inputStream.close();
                 throw new DownloadException();
