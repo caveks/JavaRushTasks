@@ -15,8 +15,7 @@ public class Solution {
 
         while (s != null) {
             if (s.startsWith(args[0] + " ")){
-              char[] data = s.toCharArray();
-                    System.out.print(data);
+                System.out.print(s);
                 break;
             } else {
                 s = input.readLine();
