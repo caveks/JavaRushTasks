@@ -50,12 +50,13 @@ public class Solution {
         } catch (Exception e){
         }
         if (s1 == null && s2 != null){
-            reader2.reset();
-            s2 = reader2.readLine();
             lines.add(new LineItem(Type.ADDED, s2));
         }
         fileReader1.close();
         fileReader2.close();
+        for (LineItem l:lines) {
+            System.out.println(l.getType() + " " + l.getLine());
+        }
     }
 
     public static enum Type {
@@ -71,6 +72,12 @@ public class Solution {
         public LineItem(Type type, String line) {
             this.type = type;
             this.line = line;
+        }
+        public Type getType(){
+            return type;
+        }
+        public String getLine(){
+            return line;
         }
     }
 }
