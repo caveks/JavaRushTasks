@@ -54,9 +54,6 @@ public class Solution {
         }
         fileReader1.close();
         fileReader2.close();
-        for (LineItem l:lines) {
-            System.out.println(l.getType() + " " + l.getLine());
-        }
     }
 
     public static enum Type {
@@ -72,12 +69,6 @@ public class Solution {
         public LineItem(Type type, String line) {
             this.type = type;
             this.line = line;
-        }
-        public Type getType(){
-            return type;
-        }
-        public String getLine(){
-            return line;
         }
     }
 }
