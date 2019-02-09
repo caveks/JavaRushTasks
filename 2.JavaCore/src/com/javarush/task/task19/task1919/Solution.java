@@ -19,35 +19,48 @@ public class Solution {
         ArrayList<String> startList = new ArrayList<>();
         TreeMap<String, Double> finalList = new TreeMap<>();
 
-        while(bufferedReader.ready()) {
-            String s = bufferedReader.readLine();
-            startList.add(s);
+//      First variant
+        while (bufferedReader.ready()){
+            String[] s = bufferedReader.readLine().split(" ");
+            if (finalList.containsKey(s[0])){
+                finalList.put(s[0], finalList.get(s[0]) + Double.parseDouble(s[1]));
+            } else {
+                finalList.put(s[0], Double.parseDouble(s[1]));
+            }
         }
 
-        for (int i = 0; i < startList.size(); i++) {
-            String n = startList.get(i);
-            String[] w = n.split(" ");
-            String surname = w[0];
-            double figure = Double.parseDouble(w[1]);
-                for (int j = i + 1; j < startList.size(); j++) {
-                    String n1 = startList.get(j);
-                    String[] w1 = n1.split(" ");
-                    String surname1 = w1[0];
-                    double figure1 = Double.parseDouble(w1[1]);
-                    if (surname.equals(surname1)){
-                        figure = figure + figure1;
-                        startList.remove(j);
-                        j--;
-                    }
-                }
-            finalList.put(surname, figure);
-        }
+        finalList.forEach((k, v) -> System.out.println(k + " " + v));
 
-        for (Map.Entry<String, Double> entry : finalList.entrySet()) {
-            String n = entry.getKey();
-            double d = entry.getValue();
-            System.out.println(n + " " + d);
-        }
+//        Second variant
+//        while(bufferedReader.ready()) {
+//            String s = bufferedReader.readLine();
+//            startList.add(s);
+//        }
+//
+//        for (int i = 0; i < startList.size(); i++) {
+//            String n = startList.get(i);
+//            String[] w = n.split(" ");
+//            String surname = w[0];
+//            double figure = Double.parseDouble(w[1]);
+//                for (int j = i + 1; j < startList.size(); j++) {
+//                    String n1 = startList.get(j);
+//                    String[] w1 = n1.split(" ");
+//                    String surname1 = w1[0];
+//                    double figure1 = Double.parseDouble(w1[1]);
+//                    if (surname.equals(surname1)){
+//                        figure = figure + figure1;
+//                        startList.remove(j);
+//                        j--;
+//                    }
+//                }
+//            finalList.put(surname, figure);
+//        }
+//
+//        for (Map.Entry<String, Double> entry : finalList.entrySet()) {
+//            String n = entry.getKey();
+//            double d = entry.getValue();
+//            System.out.println(n + " " + d);
+//        }
         fileReader.close();
     }
 }
