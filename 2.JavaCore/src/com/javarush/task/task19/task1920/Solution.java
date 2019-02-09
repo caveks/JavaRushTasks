@@ -36,7 +36,6 @@ public class Solution {
          }
 //      double max = Collections.max(list.values()); - search max
 
-
         for (Map.Entry<String, Double> entry : list.entrySet()) {
             String surname = entry.getKey();
             double d = entry.getValue();
