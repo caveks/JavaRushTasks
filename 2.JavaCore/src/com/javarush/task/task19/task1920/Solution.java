@@ -7,6 +7,7 @@ package com.javarush.task.task19.task1920;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -33,6 +34,9 @@ public class Solution {
                 }
             }
          }
+//      double max = Collections.max(list.values()); - search max
+
+
         for (Map.Entry<String, Double> entry : list.entrySet()) {
             String surname = entry.getKey();
             double d = entry.getValue();
